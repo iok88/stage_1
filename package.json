@@ -1,0 +1,7 @@
+{
+  "name": "stage_1",
+  "version": "1.0.0"
+  "scripts" : {
+    "start" : "task_3_Data_Types.js" 
+			  }
+}
