@@ -1,4 +1,4 @@
-    console.log("4------------------------------------------------");
+    console.log("4-----------------------------------------------");
     let car = {};
     car.color = "black";
     car.color = "green";
@@ -19,36 +19,16 @@
  
     console.log("------------------------------------------------"); 
  
-    let myname = "Ivan"; // 
-    const readline = require('readline').createInterface({
-      input: process.stdin, 
-      output: process.stdout
-    }); 
- 
-    const start = async () =>{
- 	   console.log("What's your name?"  )
-        for await (const line of readline) {
-            if (line == myname) {
-	 	   console.log("Hello " + line);
-		    }
-	 	   else console.log("No such name ");
-		   readline.close();
-		} 
-    }
-    start()
- 
+    let myname = "Ivan"; 
+	function checkName(name) {
+		if (name==myname) {
+		console.log("Hello  " + name)	;
+		}
+		else console.log("No such name");	
+	}
+	checkName("Ivan");
     console.log("------------------------------------------------"); 
+    
   
-  const stop = async () =>{
- 	   console.log("HAHAHAHA?"  )
-        for await (const line of readline) {
-            if (line == myname) {
-	 	   console.log("Hello HAHAHA " + line);
-		   //readline.close();
-	   	    }
-	 	   else console.log("No such name HAHAHA ");
-		
-        } 
-    }
-    stop()
+
 
