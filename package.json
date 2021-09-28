@@ -2,6 +2,6 @@
   "name": "stage_1",
   "version": "1.0.0",
   "scripts" : {
-  "start" : "node task_4_ObjFunc.js" 
-			  }
+  "start" : "node task_5.js" 
+  			  }
 }
