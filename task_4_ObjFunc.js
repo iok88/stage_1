@@ -45,19 +45,25 @@
 		
 		y=Math. trunc((Math.abs(x))**(1/2)); // take the integral part of the absolute 
 											//	value of the square root of the number
+		f = true;
 		for (let i=2; i<=y; i++){
-			if (x%i==0 && x>3) {
-				console.log(x + "  HEPROSTOE");
+			if (x%i==0) {
+				f=false;
 			}
-			else console.log(x + "  PROSTOE");
 		}
+		if (f) {
+			 console.log(x + " is prime!")
+		}
+		else console.log(x + " is not prime")
 	}
 	calcNumber(1);
 	calcNumber(2);
-	calcNumber(3);
-	calcNumber(4);
-	calcNumber(5);
-	calcNumber(5487);
+	calcNumber(8795);
+	calcNumber(123);
+	calcNumber(7873);
+	calcNumber(77);
+	
+	console.log("------------------------------------------------"); 
 	
   
 
