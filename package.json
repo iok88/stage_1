@@ -2,6 +2,6 @@
   "name": "stage_1",
   "version": "1.0.0",
   "scripts" : {
-  "start" : "node task_6.js" 
+  "start" : "node task_7.js" 
   			  }
 }
