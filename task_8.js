@@ -2,15 +2,16 @@
 	try {
 	 console.log(a);
 	 let a = 3;
-	 a = 1/0;
-	 if (a == Infinity){
-	  throw new SyntaxError("Cannot be divided by zero");
-	 }
 	} catch (err) {
 	 if (err.name == "ReferenceError") {
-	  console.log(" Before using 'a' you need to declare");
+	  console.log("Before using 'a' you need to declare");
 	  }
-	  else
-	  console.log(err.message);
+	}
+	try {
+	 let b = 1/0;
+	 if (b == Infinity){
+	  throw new SyntaxError("Cannot be divided by zero");
 	 }
-	
+	} catch (e) {
+	 console.log(e.message);
+	}
